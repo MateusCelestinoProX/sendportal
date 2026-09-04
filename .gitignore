@@ -1,0 +1,31 @@
+# Environment & Secrets
+.env
+*.env.backup
+*.env.production
+
+# Runtime Database & Storage Mounts
+/data/
+/data/postgres/
+/data/storage/
+
+# Laravel & Composer Cache
+/vendor/
+/node_modules/
+npm-debug.log
+yarn-error.log
+
+# System files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~

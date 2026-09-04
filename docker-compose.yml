@@ -1,0 +1,52 @@
+services:
+  sendportal-db:
+    image: postgres:15-alpine
+    container_name: sendportal-db
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: sendportal
+      POSTGRES_PASSWORD: sendportalpass
+      POSTGRES_DB: sendportal
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U sendportal -d sendportal"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  sendportal-redis:
+    image: redis:7-alpine
+    container_name: sendportal-redis
+    restart: unless-stopped
+
+  sendportal-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: sendportal:local
+    container_name: sendportal-app
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    depends_on:
+      sendportal-db:
+        condition: service_healthy
+      sendportal-redis:
+        condition: service_started
+    env_file:
+      - .env
+    volumes:
+      - ./entrypoint.sh:/entrypoint.sh
+      - ./.env:/var/www/sendportal/.env
+      - ./data/storage:/var/www/sendportal/storage/app
+      - ./app/Adapters:/var/www/sendportal/app/Adapters
+      - ./app/Providers/AppServiceProvider.php:/var/www/sendportal/app/Providers/AppServiceProvider.php
+      - ./app/Http/Middleware/LocaleMiddleware.php:/var/www/sendportal/app/Http/Middleware/LocaleMiddleware.php
+      - ./config/app.php:/var/www/sendportal/config/app.php
+      - ./resources/views/vendor/sendportal:/var/www/sendportal/resources/views/vendor/sendportal
+      - ./resources/views/layouts:/var/www/sendportal/resources/views/layouts
+      - ./lang:/var/www/sendportal/lang
+      - ./public/css/amoled-theme.css:/var/www/sendportal/public/css/amoled-theme.css
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
