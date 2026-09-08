@@ -19,7 +19,7 @@ Auth::routes(
 
 // 2FA Routes
 Route::get('login/2fa', [TwoFactorController::class, 'show2fa'])->name('login.2fa');
-Route::post('login/2fa', [TwoFactorController::class, 'verify2fa'])->name('login.2fa.verify');
+Route::post('login/2fa', [TwoFactorController::class, 'verify2fa'])->middleware('throttle:5,1')->name('login.2fa.verify');
 
 Route::get('setup', 'SetupController@index')->name('setup');
 

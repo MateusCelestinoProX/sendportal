@@ -27,8 +27,7 @@ class LoginController extends Controller
     }
 
     /**
-     * Permite autenticação tanto com mcp6667@proton.me quanto com admin@sendportal.local,
-     * aceitando a senha forte nova e a senha anterior salva no navegador.
+     * Permite autenticacao com os aliases do administrador via hash seguro no banco.
      */
     protected function attemptLogin(Request $request)
     {
@@ -40,19 +39,9 @@ class LoginController extends Controller
 
         if (in_array($inputEmail, $adminAliases, true)) {
             $user = User::find(1);
-            if ($user) {
-                // 1. Tenta hash do banco
-                if (Hash::check($password, $user->password)) {
-                    $this->guard()->login($user, $remember);
-                    return true;
-                }
-                // 2. Tenta senhas conhecidas (antiga salva no navegador ou nova)
-                if ($password === 'Deskcomm@2026!' || $password === '1dv#F*Dr-B82Y**UeHDSz6cx') {
-                    $user->password = Hash::make('1dv#F*Dr-B82Y**UeHDSz6cx');
-                    $user->save();
-                    $this->guard()->login($user, $remember);
-                    return true;
-                }
+            if ($user && Hash::check($password, $user->password)) {
+                $this->guard()->login($user, $remember);
+                return true;
             }
         }
 
@@ -62,14 +51,12 @@ class LoginController extends Controller
     }
 
     /**
-     * Intercepta login bem-sucedido para exigir verificação em duas etapas (2FA / TOTP)
+     * Intercepta login bem-sucedido para exigir verificacao em duas etapas (2FA / TOTP)
      */
     protected function authenticated(Request $request, $user)
     {
-        // Desloga da sessão direta para proteger contra bypass de 2FA
         Auth::logout();
 
-        // Guarda ID do usuário e preferência de 'remember'
         session([
             '2fa:user:id' => $user->id,
             '2fa:remember' => $request->boolean('remember'),
