@@ -48,5 +48,11 @@ services:
       - ./resources/views/layouts:/var/www/sendportal/resources/views/layouts
       - ./lang:/var/www/sendportal/lang
       - ./public/css/amoled-theme.css:/var/www/sendportal/public/css/amoled-theme.css
+      - ./app/Services/TotpService.php:/var/www/sendportal/app/Services/TotpService.php
+      - ./app/Http/Controllers/Auth/TwoFactorController.php:/var/www/sendportal/app/Http/Controllers/Auth/TwoFactorController.php
+      - ./app/Http/Controllers/Auth/LoginController.php:/var/www/sendportal/app/Http/Controllers/Auth/LoginController.php
+      - ./resources/views/auth/two_factor.blade.php:/var/www/sendportal/resources/views/auth/two_factor.blade.php
+      - ./routes/web.php:/var/www/sendportal/routes/web.php
+      - ./database/migrations/2026_09_08_000000_add_two_factor_to_users_table.php:/var/www/sendportal/database/migrations/2026_09_08_000000_add_two_factor_to_users_table.php
     extra_hosts:
       - "host.docker.internal:host-gateway"

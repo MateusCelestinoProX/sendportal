@@ -1,0 +1,656 @@
+{
+  "app/Adapters/ResendMailAdapter.php": {
+    "mtime": 1788561152.3330426,
+    "seen": 1788812601.456338,
+    "ast_hash": "55dc90b1d36355f85a0b9b48c070e435",
+    "semantic_hash": ""
+  },
+  "app/Http/Middleware/LocaleMiddleware.php": {
+    "mtime": 1788559250.827953,
+    "seen": 1788812601.456342,
+    "ast_hash": "b8c61040db6e4ce08872cced32a1c268",
+    "semantic_hash": ""
+  },
+  "app/Providers/AppServiceProvider.php": {
+    "mtime": 1788821048.7203102,
+    "seen": 1788886049.8978846,
+    "ast_hash": "71f4b3b9a06b6c76243e44b7633c1f24",
+    "semantic_hash": ""
+  },
+  "config/app.php": {
+    "mtime": 1788559236.9599898,
+    "seen": 1788812601.4563441,
+    "ast_hash": "106cd83da77af0607db4f3427dc0825c",
+    "semantic_hash": ""
+  },
+  "entrypoint.sh": {
+    "mtime": 1788559375.383246,
+    "seen": 1788812601.456345,
+    "ast_hash": "c8f18e11d87b250275dc26ca9d2bfeb0",
+    "semantic_hash": ""
+  },
+  "lang/pt-BR.json": {
+    "mtime": 1788560297.1456208,
+    "seen": 1788812601.456346,
+    "ast_hash": "e55d3a6a361632f1bcce524b88a1f012",
+    "semantic_hash": ""
+  },
+  "lang/pt_BR.json": {
+    "mtime": 1788560297.1395514,
+    "seen": 1788812601.456346,
+    "ast_hash": "e55d3a6a361632f1bcce524b88a1f012",
+    "semantic_hash": ""
+  },
+  "lang/vendor/sendportal/de.json": {
+    "mtime": 1788559354.2326016,
+    "seen": 1788812601.456347,
+    "ast_hash": "0559e22f37719b32505969788fc1caa2",
+    "semantic_hash": ""
+  },
+  "lang/vendor/sendportal/en.json": {
+    "mtime": 1788559354.2333574,
+    "seen": 1788812601.456348,
+    "ast_hash": "47ccb1f0a9aab26d0858e42962370e28",
+    "semantic_hash": ""
+  },
+  "lang/vendor/sendportal/lv.json": {
+    "mtime": 1788559354.2347133,
+    "seen": 1788812601.456349,
+    "ast_hash": "cb86adf5e630a8f19aaf961b0cbc1b90",
+    "semantic_hash": ""
+  },
+  "lang/vendor/sendportal/pt-BR.json": {
+    "mtime": 1788560297.1349487,
+    "seen": 1788812601.456349,
+    "ast_hash": "e55d3a6a361632f1bcce524b88a1f012",
+    "semantic_hash": ""
+  },
+  "lang/vendor/sendportal/pt_BR.json": {
+    "mtime": 1788560288.852165,
+    "seen": 1788812601.4563498,
+    "ast_hash": "e55d3a6a361632f1bcce524b88a1f012",
+    "semantic_hash": ""
+  },
+  "resources/views/layouts/header/userManagementHeader.blade.php": {
+    "mtime": 1788560063.0,
+    "seen": 1788812601.456351,
+    "ast_hash": "3cb12f03de42d472ce859ed2e2c5d592",
+    "semantic_hash": ""
+  },
+  "resources/views/layouts/sidebar/manageUsersMenuItem.blade.php": {
+    "mtime": 1788556938.0,
+    "seen": 1788812601.456352,
+    "ast_hash": "ef2d44bce54ce2f84948902c06fd3215",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/cancel.blade.php": {
+    "mtime": 1788559354.1666787,
+    "seen": 1788812601.456352,
+    "ast_hash": "c9c001dd139eb2127070b62127ac89a2",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/create.blade.php": {
+    "mtime": 1788559354.167168,
+    "seen": 1788812601.456353,
+    "ast_hash": "c4352d36acc3f30f6244f834ad5dff50",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/delete.blade.php": {
+    "mtime": 1788559354.1675785,
+    "seen": 1788812601.4563541,
+    "ast_hash": "74dda190377f2d51c4e1a388cfaecbf8",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/design.blade.php": {
+    "mtime": 1788559354.168376,
+    "seen": 1788812601.4563541,
+    "ast_hash": "d3d6d79530186380c06d7801b050c60c",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/edit.blade.php": {
+    "mtime": 1788559354.1689906,
+    "seen": 1788812601.456355,
+    "ast_hash": "251aa74f3b7d08acece918cfda7ae4af",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/emails/content/edit.blade.php": {
+    "mtime": 1788559354.1706204,
+    "seen": 1788812601.456356,
+    "ast_hash": "d2a027f7c7f188f77e43c3ff039dc4cc",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/emails/create.blade.php": {
+    "mtime": 1788559354.1711645,
+    "seen": 1788812601.456357,
+    "ast_hash": "1cf7b7ef6ecab7c56b354b5a3b06407b",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/index.blade.php": {
+    "mtime": 1788559354.1718507,
+    "seen": 1788812601.456357,
+    "ast_hash": "dd9d19476e25d7df594d99266db8bb89",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/partials/form.blade.php": {
+    "mtime": 1788559354.1729352,
+    "seen": 1788812601.456358,
+    "ast_hash": "51b6c961a277ab4f65745073f6fd95c4",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/partials/iframe.blade.php": {
+    "mtime": 1788559354.1733792,
+    "seen": 1788812601.456359,
+    "ast_hash": "4038f97c561509320220fc3a41022556",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/partials/nav.blade.php": {
+    "mtime": 1788559354.1740866,
+    "seen": 1788812601.4563599,
+    "ast_hash": "a3dc7baa02d485c93b89f0517f4bf998",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/partials/status.blade.php": {
+    "mtime": 1788559354.1749642,
+    "seen": 1788812601.4563599,
+    "ast_hash": "265a78fcbd38de40f3d33e69ef40578c",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/preview.blade.php": {
+    "mtime": 1788559354.1757128,
+    "seen": 1788812601.456361,
+    "ast_hash": "b04895fbadfbee8bdac32712e2393ef9",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/reports/bounces.blade.php": {
+    "mtime": 1788559354.1768885,
+    "seen": 1788812601.456362,
+    "ast_hash": "ddc00c2e1f6bee87a843c0e28e419d87",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/reports/clicks.blade.php": {
+    "mtime": 1788559354.177778,
+    "seen": 1788812601.456362,
+    "ast_hash": "7d7d3185db7cea66de1750e4ec88b99f",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/reports/index.blade.php": {
+    "mtime": 1788559354.1783903,
+    "seen": 1788812601.456363,
+    "ast_hash": "71e4a2b117d8611fa7115ddf417e84bb",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/reports/opens.blade.php": {
+    "mtime": 1788559354.1790292,
+    "seen": 1788812601.456364,
+    "ast_hash": "7f8b9668f1f48ac9631bd2fdc77a2ac9",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/reports/partials/nav.blade.php": {
+    "mtime": 1788559354.1801476,
+    "seen": 1788812601.456364,
+    "ast_hash": "c9384daafad530da7b41fa67a7992df0",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/reports/recipients.blade.php": {
+    "mtime": 1788559354.1805878,
+    "seen": 1788812601.456365,
+    "ast_hash": "fb4fad87c9a6e2d15440034545179d56",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/reports/unsubscribes.blade.php": {
+    "mtime": 1788559354.1814847,
+    "seen": 1788812601.456366,
+    "ast_hash": "5586975c632596f593ef0d2f7053d23b",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/show.blade.php": {
+    "mtime": 1788559354.1821463,
+    "seen": 1788812601.456366,
+    "ast_hash": "9fb0928a316b2909fa722a7400d34a7d",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/status.blade.php": {
+    "mtime": 1788559354.18276,
+    "seen": 1788812601.456367,
+    "ast_hash": "0fb0df1444a0e139a5542b6718d5faa5",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/campaigns/template.blade.php": {
+    "mtime": 1788559354.1832223,
+    "seen": 1788812601.4563682,
+    "ast_hash": "4c34f3b376aadcad571ce41788a6fb87",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/checkbox-field.blade.php": {
+    "mtime": 1788559354.1841846,
+    "seen": 1788812601.4563682,
+    "ast_hash": "a6a97956827d92a31e2f42fe736e8278",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/field-wrapper.blade.php": {
+    "mtime": 1788559354.1846635,
+    "seen": 1788812601.456369,
+    "ast_hash": "b785096c0ebb4d4fa618caad4a610f0d",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/file-field.blade.php": {
+    "mtime": 1788559354.1853368,
+    "seen": 1788812601.4563699,
+    "ast_hash": "2f9307afe1920b4a122113a02b8b7b88",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/label.blade.php": {
+    "mtime": 1788559354.1863303,
+    "seen": 1788812601.4563708,
+    "ast_hash": "7dea30aa9c3dcb9aab502505c1a25005",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/select-field.blade.php": {
+    "mtime": 1788559354.187386,
+    "seen": 1788812601.4563708,
+    "ast_hash": "805bb4a77ca959100bb853ce7d71da47",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/submit-button.blade.php": {
+    "mtime": 1788559354.1878507,
+    "seen": 1788812601.456372,
+    "ast_hash": "3f2e46bf8dbe4a2c82dbd15c4c90f994",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/text-field.blade.php": {
+    "mtime": 1788559354.1884162,
+    "seen": 1788812601.456373,
+    "ast_hash": "b5b10c5fd335e4dda1290b6e52e42dd2",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/components/textarea-field.blade.php": {
+    "mtime": 1788559354.1897044,
+    "seen": 1788812601.456374,
+    "ast_hash": "ee6cf49ad624b6dd782c52565c8a8269",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/dashboard/index.blade.php": {
+    "mtime": 1788559354.1907282,
+    "seen": 1788812601.4563751,
+    "ast_hash": "37e39ae5bc3b403f160d99ee1c63d6ce",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/create.blade.php": {
+    "mtime": 1788562585.363904,
+    "seen": 1788812601.4563751,
+    "ast_hash": "39c4c1f6030ba840d9e0a456cc3a1d23",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/edit.blade.php": {
+    "mtime": 1788562590.1721694,
+    "seen": 1788812601.456376,
+    "ast_hash": "e8788b7117017c280e2ffa95a2efd693",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/index.blade.php": {
+    "mtime": 1788559354.1928136,
+    "seen": 1788812601.456377,
+    "ast_hash": "af0912eeec9b02d9446f395d1e3ea98b",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/mailgun.blade.php": {
+    "mtime": 1788559354.193431,
+    "seen": 1788812601.456377,
+    "ast_hash": "38ea1b1d287d72e6725f6d59518518b3",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/mailjet.blade.php": {
+    "mtime": 1788559354.1942184,
+    "seen": 1788812601.4563782,
+    "ast_hash": "91b5f1b59066117d6d8714db16c8f708",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/postal.blade.php": {
+    "mtime": 1788559354.194967,
+    "seen": 1788812601.456379,
+    "ast_hash": "7ece3e5759bd62ec73c94ec689fc6983",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/postmark.blade.php": {
+    "mtime": 1788559354.1954935,
+    "seen": 1788812601.456379,
+    "ast_hash": "e5dbd8be45ea75d433ca6aac64142079",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/resend.blade.php": {
+    "mtime": 1788562605.896367,
+    "seen": 1788812601.45638,
+    "ast_hash": "5fc758938dc65c8ae6e0bd58eb25c154",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/sendgrid.blade.php": {
+    "mtime": 1788559354.196179,
+    "seen": 1788812601.4563808,
+    "ast_hash": "e2e60624180ad895e1347963b3f41700",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/ses.blade.php": {
+    "mtime": 1788559354.1966524,
+    "seen": 1788812601.4563808,
+    "ast_hash": "5fadc7147d73909db6aa0450d21f2bef",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/options/smtp.blade.php": {
+    "mtime": 1788559354.1974344,
+    "seen": 1788812601.456382,
+    "ast_hash": "ecf7074e47da508824d05a8bbb52471d",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/email_services/test.blade.php": {
+    "mtime": 1788559354.1980398,
+    "seen": 1788812601.456383,
+    "ast_hash": "9881645b7ac01bb1bc911fb1ff942a13",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/emails/partials/form.blade.php": {
+    "mtime": 1788559354.1994345,
+    "seen": 1788812601.456383,
+    "ast_hash": "0b59570ca90af626da4811eb62306c52",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/app.blade.php": {
+    "mtime": 1788559409.0543861,
+    "seen": 1788812601.456384,
+    "ast_hash": "a8aa7bcadb503edd0f2b0c5c99b3944b",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/base.blade.php": {
+    "mtime": 1788560221.0,
+    "seen": 1788812601.4563851,
+    "ast_hash": "a773b82f235dcc5c8baec780b2da1418",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/main.blade.php": {
+    "mtime": 1788559419.1169198,
+    "seen": 1788812601.4563851,
+    "ast_hash": "6d7e4984b9495fb5abff01f68b49537f",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/actions.blade.php": {
+    "mtime": 1788559354.202134,
+    "seen": 1788812601.456386,
+    "ast_hash": "5daee2059b415a118e97796f33fa35c8",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/card.blade.php": {
+    "mtime": 1788559354.2025278,
+    "seen": 1788812601.456387,
+    "ast_hash": "15508663c37b329d631efbd67f4fd6f7",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/error.blade.php": {
+    "mtime": 1788559354.2029667,
+    "seen": 1788812601.456387,
+    "ast_hash": "bac883638e572466c9be995ffcad3bf8",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/errors.blade.php": {
+    "mtime": 1788559354.2039158,
+    "seen": 1788812601.456388,
+    "ast_hash": "6310add758cc05210197e6d34f595105",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/favicons.blade.php": {
+    "mtime": 1788559354.204538,
+    "seen": 1788812601.4563892,
+    "ast_hash": "5e95ea5773a5f365c597eab7b209fedf",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/header.blade.php": {
+    "mtime": 1788560055.0,
+    "seen": 1788812601.4563892,
+    "ast_hash": "c94df307ba59e40d741204f55c87c703",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/pagination.blade.php": {
+    "mtime": 1788559354.2055545,
+    "seen": 1788812601.45639,
+    "ast_hash": "58d51b4316e0b4dea3789fe8bbd827e2",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/sidebar.blade.php": {
+    "mtime": 1788562580.2277508,
+    "seen": 1788812601.4563909,
+    "ast_hash": "27184d1af7d5b1cec48aed725d5c6f66",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/success.blade.php": {
+    "mtime": 1788559354.2065582,
+    "seen": 1788812601.4563909,
+    "ast_hash": "912d72a3a42d321d251816f181692fe2",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/summernote.blade.php": {
+    "mtime": 1788559354.2072465,
+    "seen": 1788812601.456392,
+    "ast_hash": "05d47eae4acf03c5ae291a10fb5a8647",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/partials/warning.blade.php": {
+    "mtime": 1788559354.2077818,
+    "seen": 1788812601.456393,
+    "ast_hash": "cc754eb6fc21449c3fdb1f028d4912f5",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/layouts/subscriptions.blade.php": {
+    "mtime": 1788559354.2083895,
+    "seen": 1788812601.456393,
+    "ast_hash": "aeac19e7888a27492575a4e88f6940ae",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/messages/index.blade.php": {
+    "mtime": 1788559354.2095485,
+    "seen": 1788812601.456394,
+    "ast_hash": "072cc849daa561381745d2fc95fd9f2f",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/messages/partials/nav.blade.php": {
+    "mtime": 1788559354.2107906,
+    "seen": 1788812601.456395,
+    "ast_hash": "d7c9da68bb4e0f689c1aef7e510869a2",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/messages/partials/status-row.blade.php": {
+    "mtime": 1788559354.2113667,
+    "seen": 1788812601.456395,
+    "ast_hash": "a0dc48a873a1f718bb6f5aabb9ef484f",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/messages/show.blade.php": {
+    "mtime": 1788559354.211786,
+    "seen": 1788812601.456396,
+    "ast_hash": "7372b604caad82b64398998d0d46c5c0",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscribers/create.blade.php": {
+    "mtime": 1788559354.212678,
+    "seen": 1788812601.456397,
+    "ast_hash": "3a75c176147bf2fe28b266e98bc259f0",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscribers/edit.blade.php": {
+    "mtime": 1788559354.2132916,
+    "seen": 1788812601.456398,
+    "ast_hash": "1d3b2c9c0f3a53b6bc7e173e2d955454",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscribers/import.blade.php": {
+    "mtime": 1788559354.2141418,
+    "seen": 1788812601.456398,
+    "ast_hash": "c775ab7b93495c85b8f3cbeda1036a93",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscribers/index.blade.php": {
+    "mtime": 1788559354.2150092,
+    "seen": 1788812601.4563992,
+    "ast_hash": "2c2cd0375c3a6e2bde13d6cd1a03c789",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscribers/partials/form.blade.php": {
+    "mtime": 1788560123.0,
+    "seen": 1788812601.4564,
+    "ast_hash": "41e49e7764dfcdd7da0933efdfc7dc1f",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscribers/show.blade.php": {
+    "mtime": 1788559354.216837,
+    "seen": 1788812601.4564009,
+    "ast_hash": "c7bf092f3b3fd23ba2e3e19ee45f5e2a",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscriptions/confirm.blade.php": {
+    "mtime": 1788559354.2183306,
+    "seen": 1788812601.4564009,
+    "ast_hash": "3f874b21fbe47ebc6738b1beb84a8fa1",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscriptions/subscribe.blade.php": {
+    "mtime": 1788559354.2187936,
+    "seen": 1788812601.4564018,
+    "ast_hash": "df06f1adf664fd5a5eb2f891ade58591",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/subscriptions/unsubscribe.blade.php": {
+    "mtime": 1788559354.2192786,
+    "seen": 1788812601.456404,
+    "ast_hash": "a3f3631bec051d1a32190a102c108cc0",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/tags/create.blade.php": {
+    "mtime": 1788559354.220361,
+    "seen": 1788812601.456404,
+    "ast_hash": "85b4cc6a2662574db15b528f87dd4ff8",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/tags/edit.blade.php": {
+    "mtime": 1788559354.221046,
+    "seen": 1788812601.456405,
+    "ast_hash": "a3535f45e80e3e78225b1b68dc1315f8",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/tags/index.blade.php": {
+    "mtime": 1788559354.221627,
+    "seen": 1788812601.456406,
+    "ast_hash": "07190af16fea203d8b3a15c5054caf09",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/tags/partials/actions.blade.php": {
+    "mtime": 1788559354.222996,
+    "seen": 1788812601.456406,
+    "ast_hash": "7df20fde6afa5faf0af31f6a20a56eae",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/tags/partials/form.blade.php": {
+    "mtime": 1788559354.2237968,
+    "seen": 1788812601.456407,
+    "ast_hash": "0003e65170024cab3b1c9eb34f601e47",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/templates/create.blade.php": {
+    "mtime": 1788559354.2246375,
+    "seen": 1788812601.456408,
+    "ast_hash": "a747dd73a936688675b14047588de3c2",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/templates/edit.blade.php": {
+    "mtime": 1788559354.2250717,
+    "seen": 1788812601.456408,
+    "ast_hash": "94634cbf7b477a984762920eaddbc713",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/templates/index.blade.php": {
+    "mtime": 1788559354.2255962,
+    "seen": 1788812601.456409,
+    "ast_hash": "4c9921f80324c0be0aa0922f5ffbacc2",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/templates/partials/editor.blade.php": {
+    "mtime": 1788559354.2263248,
+    "seen": 1788812601.4564102,
+    "ast_hash": "d29079b61820d4b866a6d80b929861b4",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/templates/partials/form.blade.php": {
+    "mtime": 1788559354.2275586,
+    "seen": 1788812601.4564102,
+    "ast_hash": "c4c78c6849928a30c1be048ddd9689cb",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/templates/partials/grid.blade.php": {
+    "mtime": 1788559354.228373,
+    "seen": 1788812601.456411,
+    "ast_hash": "8e68ca9eeac7871be8b1248f7afc9b09",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/templates/partials/griditem.blade.php": {
+    "mtime": 1788559354.2289956,
+    "seen": 1788812601.4564118,
+    "ast_hash": "423e65c2563f748fad76c4cb3a924f72",
+    "semantic_hash": ""
+  },
+  "resources/views/vendor/sendportal/webview/show.blade.php": {
+    "mtime": 1788559354.2300227,
+    "seen": 1788812601.4564118,
+    "ast_hash": "86a738ca52afb5ded683c0dde2d86ea9",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1788565197.2016373,
+    "seen": 1788812601.456413,
+    "ast_hash": "b17fc1ef855c3659d50d5e39b2cb5831",
+    "semantic_hash": ""
+  },
+  "docker-compose.yml": {
+    "mtime": 1788885788.926276,
+    "seen": 1788886049.8980873,
+    "ast_hash": "33cb0b1df8c54809609277fb096a17ad",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Auth/LoginController.php": {
+    "mtime": 1788885755.520293,
+    "seen": 1788886049.8978758,
+    "ast_hash": "c3e919f2b6b8d9ac462bc000929deab1",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Auth/TwoFactorController.php": {
+    "mtime": 1788885754.375293,
+    "seen": 1788886049.897879,
+    "ast_hash": "14e763bbc8c1e949272bb93a61c8d56a",
+    "semantic_hash": ""
+  },
+  "app/Services/TotpService.php": {
+    "mtime": 1788885752.0572925,
+    "seen": 1788886049.8978863,
+    "ast_hash": "e181f93e5983d0f47061bb0bf0a651d1",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_09_08_000000_add_two_factor_to_users_table.php": {
+    "mtime": 1788885753.2132928,
+    "seen": 1788886049.8978906,
+    "ast_hash": "013370ec6026c460b820dbfd6b5213ad",
+    "semantic_hash": ""
+  },
+  "resources/views/auth/login.blade.php": {
+    "mtime": 1788821711.755568,
+    "seen": 1788886049.897908,
+    "ast_hash": "52671a84a197250ad03424fbc7fb5698",
+    "semantic_hash": ""
+  },
+  "resources/views/auth/two_factor.blade.php": {
+    "mtime": 1788885756.7732933,
+    "seen": 1788886049.8979092,
+    "ast_hash": "43a69c9e2c2cb7c91319db437c4c6833",
+    "semantic_hash": ""
+  },
+  "routes/web.php": {
+    "mtime": 1788885758.0172935,
+    "seen": 1788886049.8980837,
+    "ast_hash": "4fdbb664bcce7c720a11df2c998aded4",
+    "semantic_hash": ""
+  }
+}
