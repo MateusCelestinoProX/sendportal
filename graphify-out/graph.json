@@ -223,7 +223,7 @@
       "file_type": "code",
       "norm_label": ".attemptlogin()",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L33"
+      "source_location": "L32"
     },
     {
       "id": "app_http_controllers_auth_logincontroller_logincontroller_authenticated",
@@ -235,7 +235,7 @@
       "file_type": "code",
       "norm_label": ".authenticated()",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L67"
+      "source_location": "L56"
     },
     {
       "id": "app_http_controllers_auth_logincontroller_logincontroller_construct",
@@ -259,7 +259,7 @@
       "file_type": "code",
       "norm_label": ".redirectto()",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L81"
+      "source_location": "L68"
     },
     {
       "id": "app_http_controllers_auth_logincontroller_logincontroller_showloginform",
@@ -3336,7 +3336,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -3348,7 +3348,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L67",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -4445,7 +4445,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L33",
+      "source_location": "L32",
       "weight": 1.0
     },
     {
@@ -4456,7 +4456,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L67",
+      "source_location": "L56",
       "weight": 1.0
     },
     {
@@ -4467,7 +4467,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L81",
+      "source_location": "L68",
       "weight": 1.0
     },
     {
@@ -4604,5 +4604,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "81681161bc35b9c6a9f5ed88241364925a3275cd"
+  "built_at_commit": "b4911354002328274a6b17a598be3d2f38adc3ff"
 }
