@@ -1,16 +1,16 @@
 # Graph Report - sendportal  (2026-09-08)
 
 ## Corpus Check
-- 108 files · ~30,402 words
+- 108 files · ~30,569 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 232 nodes · 168 edges · 100 communities (9 shown, 34 thin omitted)
+- 234 nodes · 172 edges · 100 communities (9 shown, 34 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `087b7c46`
+- Built from commit: `81681161`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -19,7 +19,7 @@
 - AppServiceProvider.php
 - 🚀 SendPortal Super AMOLED Edition - Resend Multi-Key Engine
 - main.blade.php
-- TwoFactorController.php
+- LoginController.php
 - LocaleMiddleware.php
 - campaigns/index.blade.php
 - messages/index.blade.php
@@ -62,7 +62,7 @@
 ## God Nodes (most connected - your core abstractions)
 1. `ResendMailAdapter` - 11 edges
 2. `TotpService` - 10 edges
-3. `LoginController` - 7 edges
+3. `LoginController` - 8 edges
 4. `🚀 SendPortal Super AMOLED Edition - Resend Multi-Key Engine` - 7 edges
 5. `🛠️ Como Executar o Projeto` - 6 edges
 6. `TwoFactorController` - 5 edges
@@ -84,8 +84,8 @@ Cohesion: 0.18
 Nodes (9): ResendMailAdapter, Exception, Illuminate\Support\Arr, Illuminate\Support\Facades\Cache, Illuminate\Support\Facades\Http, Illuminate\Support\Facades\Log, Illuminate\Support\Str, Sendportal\Base\Adapters\BaseMailAdapter (+1 more)
 
 ### Community 1 - "AppServiceProvider.php"
-Cohesion: 0.22
-Nodes (8): App\Livewire\Setup, App\Models\ApiToken, App\Models\User, AppServiceProvider, Illuminate\Pagination\Paginator, Illuminate\Support\ServiceProvider, Livewire\Livewire, RuntimeException
+Cohesion: 0.24
+Nodes (7): App\Livewire\Setup, App\Models\ApiToken, AppServiceProvider, Illuminate\Pagination\Paginator, Illuminate\Support\ServiceProvider, Livewire\Livewire, RuntimeException
 
 ### Community 2 - "🚀 SendPortal Super AMOLED Edition - Resend Multi-Key Engine"
 Cohesion: 0.12
@@ -95,9 +95,9 @@ Nodes (16): 1. 🌑 Visual Super 100% Vanta Black AMOLED & High Contrast Electri
 Cohesion: 0.29
 Nodes (6): sendportal::layouts.partials.sidebar, sendportal::layouts.partials.success, sendportal::layouts.partials.error, sendportal::layouts.partials.errors, sendportal::layouts.partials.header, sendportal::layouts.partials.warning
 
-### Community 4 - "TwoFactorController.php"
-Cohesion: 0.20
-Nodes (9): LoginController, TwoFactorController, App\Http\Controllers\Controller, Illuminate\Contracts\View\View, Illuminate\Foundation\Auth\AuthenticatesUsers, Illuminate\Http\RedirectResponse, Illuminate\Http\Request, Illuminate\Support\Facades\Auth (+1 more)
+### Community 4 - "LoginController.php"
+Cohesion: 0.17
+Nodes (11): LoginController, TwoFactorController, App\Http\Controllers\Controller, App\Models\User, Illuminate\Contracts\View\View, Illuminate\Foundation\Auth\AuthenticatesUsers, Illuminate\Http\RedirectResponse, Illuminate\Http\Request (+3 more)
 
 ### Community 6 - "campaigns/index.blade.php"
 Cohesion: 0.50
@@ -117,15 +117,15 @@ Nodes (3): Illuminate\Database\Migrations\Migration, Illuminate\Database\Schema\
 
 ## Knowledge Gaps
 - **64 isolated node(s):** `entrypoint.sh script`, `sendportal::campaigns.partials.form`, `sendportal::templates.partials.editor`, `sendportal::campaigns.partials.form`, `emails.content.partials.form` (+59 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 173 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 174 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **34 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `TotpService` connect `TotpService` to `TwoFactorController.php`?**
-  _High betweenness centrality (0.010) - this node is a cross-community bridge._
-- **Why does `TwoFactorController` connect `TwoFactorController.php` to `web.php`?**
+- **Why does `TotpService` connect `TotpService` to `LoginController.php`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `TwoFactorController` connect `LoginController.php` to `web.php`?**
   _High betweenness centrality (0.004) - this node is a cross-community bridge._
 - **What connects `entrypoint.sh script`, `sendportal::campaigns.partials.form`, `sendportal::templates.partials.editor` to the rest of the system?**
   _64 weakly-connected nodes found - possible documentation gaps or missing edges._

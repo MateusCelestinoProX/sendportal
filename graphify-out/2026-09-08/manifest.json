@@ -12,9 +12,9 @@
     "semantic_hash": ""
   },
   "app/Providers/AppServiceProvider.php": {
-    "mtime": 1788562272.207719,
-    "seen": 1788812601.456343,
-    "ast_hash": "b26d3811c3f7528684c667a3dc952fcc",
+    "mtime": 1788821048.7203102,
+    "seen": 1788886049.8978846,
+    "ast_hash": "71f4b3b9a06b6c76243e44b7633c1f24",
     "semantic_hash": ""
   },
   "config/app.php": {
@@ -606,9 +606,51 @@
     "semantic_hash": ""
   },
   "docker-compose.yml": {
-    "mtime": 1788559340.216195,
-    "seen": 1788812601.456414,
-    "ast_hash": "b757d5423b7400f704e3e9bc98dee2c2",
+    "mtime": 1788885788.926276,
+    "seen": 1788886049.8980873,
+    "ast_hash": "33cb0b1df8c54809609277fb096a17ad",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Auth/LoginController.php": {
+    "mtime": 1788885755.520293,
+    "seen": 1788886049.8978758,
+    "ast_hash": "c3e919f2b6b8d9ac462bc000929deab1",
+    "semantic_hash": ""
+  },
+  "app/Http/Controllers/Auth/TwoFactorController.php": {
+    "mtime": 1788885754.375293,
+    "seen": 1788886049.897879,
+    "ast_hash": "14e763bbc8c1e949272bb93a61c8d56a",
+    "semantic_hash": ""
+  },
+  "app/Services/TotpService.php": {
+    "mtime": 1788885752.0572925,
+    "seen": 1788886049.8978863,
+    "ast_hash": "e181f93e5983d0f47061bb0bf0a651d1",
+    "semantic_hash": ""
+  },
+  "database/migrations/2026_09_08_000000_add_two_factor_to_users_table.php": {
+    "mtime": 1788885753.2132928,
+    "seen": 1788886049.8978906,
+    "ast_hash": "013370ec6026c460b820dbfd6b5213ad",
+    "semantic_hash": ""
+  },
+  "resources/views/auth/login.blade.php": {
+    "mtime": 1788821711.755568,
+    "seen": 1788886049.897908,
+    "ast_hash": "52671a84a197250ad03424fbc7fb5698",
+    "semantic_hash": ""
+  },
+  "resources/views/auth/two_factor.blade.php": {
+    "mtime": 1788885756.7732933,
+    "seen": 1788886049.8979092,
+    "ast_hash": "43a69c9e2c2cb7c91319db437c4c6833",
+    "semantic_hash": ""
+  },
+  "routes/web.php": {
+    "mtime": 1788885758.0172935,
+    "seen": 1788886049.8980837,
+    "ast_hash": "4fdbb664bcce7c720a11df2c998aded4",
     "semantic_hash": ""
   }
 }

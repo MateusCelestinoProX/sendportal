@@ -3,7 +3,7 @@
   "1": "AppServiceProvider.php",
   "2": "🚀 SendPortal Super AMOLED Edition - Resend Multi-Key Engine",
   "3": "main.blade.php",
-  "4": "TwoFactorController.php",
+  "4": "LoginController.php",
   "5": "LocaleMiddleware.php",
   "6": "campaigns/index.blade.php",
   "7": "messages/index.blade.php",

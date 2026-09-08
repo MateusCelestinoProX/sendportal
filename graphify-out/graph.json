@@ -36,11 +36,11 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "logincontroller",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L13"
+      "source_location": "L15"
     },
     {
       "id": "app_http_controllers_auth_twofactorcontroller_twofactorcontroller",
@@ -49,7 +49,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "twofactorcontroller",
       "source_file": "app/Http/Controllers/Auth/TwoFactorController.php",
@@ -214,16 +214,28 @@
       "source_location": "L21"
     },
     {
+      "id": "app_http_controllers_auth_logincontroller_logincontroller_attemptlogin",
+      "label": ".attemptLogin()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "LoginController.php",
+      "file_type": "code",
+      "norm_label": ".attemptlogin()",
+      "source_file": "app/Http/Controllers/Auth/LoginController.php",
+      "source_location": "L33"
+    },
+    {
       "id": "app_http_controllers_auth_logincontroller_logincontroller_authenticated",
       "label": ".authenticated()",
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": ".authenticated()",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L30"
+      "source_location": "L67"
     },
     {
       "id": "app_http_controllers_auth_logincontroller_logincontroller_construct",
@@ -231,11 +243,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": ".__construct()",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L17"
+      "source_location": "L19"
     },
     {
       "id": "app_http_controllers_auth_logincontroller_logincontroller_redirectto",
@@ -243,11 +255,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": ".redirectto()",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L44"
+      "source_location": "L81"
     },
     {
       "id": "app_http_controllers_auth_logincontroller_logincontroller_showloginform",
@@ -255,11 +267,11 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": ".showloginform()",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L22"
+      "source_location": "L24"
     },
     {
       "id": "app_http_controllers_auth_twofactorcontroller_twofactorcontroller_show2fa",
@@ -267,7 +279,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": ".show2fa()",
       "source_file": "app/Http/Controllers/Auth/TwoFactorController.php",
@@ -279,7 +291,7 @@
       "_callable": true,
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": ".verify2fa()",
       "source_file": "app/Http/Controllers/Auth/TwoFactorController.php",
@@ -511,17 +523,6 @@
       "community_name": "AppServiceProvider.php",
       "file_type": "code",
       "norm_label": "app\\models\\apitoken",
-      "source_file": "",
-      "source_location": ""
-    },
-    {
-      "id": "app_models_user",
-      "label": "App\\Models\\User",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "AppServiceProvider.php",
-      "file_type": "code",
-      "norm_label": "app\\models\\user",
       "source_file": "",
       "source_location": ""
     },
@@ -1589,7 +1590,7 @@
       "label": "LoginController.php",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "logincontroller.php",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
@@ -1600,7 +1601,7 @@
       "label": "TwoFactorController.php",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "twofactorcontroller.php",
       "source_file": "app/Http/Controllers/Auth/TwoFactorController.php",
@@ -1611,9 +1612,20 @@
       "label": "App\\Http\\Controllers\\Controller",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "app\\http\\controllers\\controller",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "app_models_user",
+      "label": "App\\Models\\User",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "LoginController.php",
+      "file_type": "code",
+      "norm_label": "app\\models\\user",
       "source_file": "",
       "source_location": ""
     },
@@ -1622,7 +1634,7 @@
       "label": "Illuminate\\Contracts\\View\\View",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "illuminate\\contracts\\view\\view",
       "source_file": "",
@@ -1633,7 +1645,7 @@
       "label": "Illuminate\\Foundation\\Auth\\AuthenticatesUsers",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "illuminate\\foundation\\auth\\authenticatesusers",
       "source_file": "",
@@ -1644,7 +1656,7 @@
       "label": "Illuminate\\Http\\RedirectResponse",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "illuminate\\http\\redirectresponse",
       "source_file": "",
@@ -1655,7 +1667,7 @@
       "label": "Illuminate\\Http\\Request",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "illuminate\\http\\request",
       "source_file": "",
@@ -1666,9 +1678,20 @@
       "label": "Illuminate\\Support\\Facades\\Auth",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "illuminate\\support\\facades\\auth",
+      "source_file": "",
+      "source_location": ""
+    },
+    {
+      "id": "illuminate_support_facades_hash",
+      "label": "Illuminate\\Support\\Facades\\Hash",
+      "_origin": "ast",
+      "community": 4,
+      "community_name": "LoginController.php",
+      "file_type": "code",
+      "norm_label": "illuminate\\support\\facades\\hash",
       "source_file": "",
       "source_location": ""
     },
@@ -1677,7 +1700,7 @@
       "label": "Illuminate\\View\\View",
       "_origin": "ast",
       "community": 4,
-      "community_name": "TwoFactorController.php",
+      "community_name": "LoginController.php",
       "file_type": "code",
       "norm_label": "illuminate\\view\\view",
       "source_file": "",
@@ -2886,7 +2909,7 @@
     },
     {
       "source": "app_http_controllers_auth_logincontroller",
-      "target": "illuminate_http_request",
+      "target": "illuminate_foundation_auth_authenticatesusers",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2898,7 +2921,7 @@
     },
     {
       "source": "app_http_controllers_auth_logincontroller",
-      "target": "illuminate_support_facades_auth",
+      "target": "illuminate_http_request",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2906,6 +2929,30 @@
       "context": "import",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
       "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "app_http_controllers_auth_logincontroller",
+      "target": "illuminate_support_facades_auth",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/Http/Controllers/Auth/LoginController.php",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "app_http_controllers_auth_logincontroller",
+      "target": "illuminate_support_facades_hash",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/Http/Controllers/Auth/LoginController.php",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -2922,7 +2969,7 @@
     },
     {
       "source": "app_http_controllers_auth_logincontroller",
-      "target": "illuminate_contracts_view_view",
+      "target": "app_models_user",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2934,7 +2981,7 @@
     },
     {
       "source": "app_http_controllers_auth_logincontroller",
-      "target": "illuminate_foundation_auth_authenticatesusers",
+      "target": "illuminate_contracts_view_view",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3281,6 +3328,18 @@
       "weight": 1.0
     },
     {
+      "source": "app_http_controllers_auth_logincontroller_logincontroller_attemptlogin",
+      "target": "illuminate_http_request",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "parameter_type",
+      "source_file": "app/Http/Controllers/Auth/LoginController.php",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
       "source": "app_http_controllers_auth_logincontroller_logincontroller_authenticated",
       "target": "illuminate_http_request",
       "relation": "references",
@@ -3289,7 +3348,7 @@
       "confidence_score": 1.0,
       "context": "parameter_type",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L30",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -3349,7 +3408,7 @@
       "confidence_score": 1.0,
       "context": "return_type",
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L22",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -3407,7 +3466,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -4232,7 +4291,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L13",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -4364,7 +4423,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L17",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -4375,7 +4434,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L22",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "app_http_controllers_auth_logincontroller_logincontroller",
+      "target": "app_http_controllers_auth_logincontroller_logincontroller_attemptlogin",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/Http/Controllers/Auth/LoginController.php",
+      "source_location": "L33",
       "weight": 1.0
     },
     {
@@ -4386,7 +4456,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L30",
+      "source_location": "L67",
       "weight": 1.0
     },
     {
@@ -4397,7 +4467,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L44",
+      "source_location": "L81",
       "weight": 1.0
     },
     {
@@ -4529,10 +4599,10 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/Http/Controllers/Auth/LoginController.php",
-      "source_location": "L15",
+      "source_location": "L17",
       "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "087b7c466bfa262352f2986d4aab49aaba03eaa5"
+  "built_at_commit": "81681161bc35b9c6a9f5ed88241364925a3275cd"
 }
