@@ -1,10 +1,10 @@
 @extends('sendportal::layouts.base')
 
 @section('htmlBody')
-    <div class="container-fluid">
-        <div class="row">
+    <div id="app-shell" class="container-fluid p-0">
+        <div class="row no-gutters">
 
-            <div class="sidebar bg-black min-vh-100 d-none d-xl-block" style="background-color: #000000 !important; border-right: 1px solid #18181b;">
+            <div class="sidebar min-vh-100 d-none d-xl-block">
 
                 <div class="mt-4">
                     <div class="logo text-center">

@@ -72,7 +72,9 @@ services:
       - ./resources/views/vendor/sendportal:/var/www/sendportal/resources/views/vendor/sendportal
       - ./resources/views/layouts:/var/www/sendportal/resources/views/layouts
       - ./lang:/var/www/sendportal/lang
-      - ./public/css/amoled-theme.css:/var/www/sendportal/public/css/amoled-theme.css
+      - ./public/css:/var/www/sendportal/public/css
+      - ./public/js:/var/www/sendportal/public/js
+      - ./public/images:/var/www/sendportal/public/images
       - ./app/Services/TotpService.php:/var/www/sendportal/app/Services/TotpService.php
       - ./app/Http/Controllers/Auth/TwoFactorController.php:/var/www/sendportal/app/Http/Controllers/Auth/TwoFactorController.php
       - ./app/Http/Controllers/Auth/LoginController.php:/var/www/sendportal/app/Http/Controllers/Auth/LoginController.php

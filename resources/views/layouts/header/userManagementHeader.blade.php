@@ -1,9 +1,9 @@
 @auth()
-    <ul class="navbar-nav flex-row ml-md-auto d-md-flex">
-        @php $workspaces = auth()->user()->workspaces @endphp
+    <ul class="navbar-nav flex-row ml-md-auto d-md-flex align-items-center">
+        @php $workspaces = auth()->user()->workspaces; @endphp
 
         @if (count($workspaces) == 1)
-            <li class="nav-item mr-5 px-2">
+            <li class="nav-item mr-4 px-2">
             <span class="nav-link font-weight-bold" id="bd-versions" aria-haspopup="true" aria-expanded="false" style="color: #ffffff !important; text-shadow: 0 0 10px rgba(255,255,255,0.4);">
                  {{ auth()->user()->currentWorkspace->name }}
             </span>
@@ -27,7 +27,18 @@
             </li>
         @endif
 
-        <li class="nav-item dropdown pl-3 user-dropdown">
+        <!-- MCP OS Backgrounds Button -->
+        <li class="nav-item d-flex align-items-center mr-3">
+            <button id="mcp-bg-toggle-btn" class="mcp-bg-button" type="button" title="Alterar Fundo e Galerias MCP OS" onclick="if(window.mcpOsThemeManager){window.mcpOsThemeManager.openModal();}else if(window.openBackgroundsModal){window.openBackgroundsModal();}">
+                <span style="display:flex; align-items:center; gap:6px;">
+                    <i class="fas fa-magic" style="color: #c4b5fd;"></i>
+                    <span>Backgrounds</span>
+                </span>
+                <span id="mcp-active-bg-badge" class="mcp-bg-badge">Strands</span>
+            </button>
+        </li>
+
+        <li class="nav-item dropdown pl-2 user-dropdown">
 
             <a class="nav-link dropdown-toggle mr-md-1 font-weight-bold" href="#" id="bd-versions"
                style="color: #ffffff !important;"
@@ -51,7 +62,18 @@
 
                 {{-- API Tokens --}}
                 <a class="dropdown-item px-3" href="{{ route('api-tokens.index') }}"><i
-                            class="fas fa-layer-group mr-2 color-gray-300"></i>{{ __('API Tokens') }}</a>
+                            class="fas fa-key mr-2 color-gray-300"></i>{{ __('API Tokens') }}</a>
+
+                <div class="dropdown-divider"></div>
+                <h6 class="dropdown-header text-muted" style="font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.05em; padding: 4px 16px;">Temas do Sistema</h6>
+                <a class="dropdown-item px-3" href="javascript:void(0)" id="mcp-opt-multi" onclick="if(window.mcpOsThemeManager){window.mcpOsThemeManager.applyTheme('mcp-os-multi');}else if(window.switchMcpTheme){window.switchMcpTheme('mcp-os-multi');}" style="display: flex; align-items: center; justify-content: space-between;">
+                    <span><i class="fas fa-sparkles mr-2" style="color: #c4b5fd;"></i>MCP OS Multi</span>
+                    <i class="fas fa-check" id="mcp-check-multi" style="display: none; color: #a855f7;"></i>
+                </a>
+                <a class="dropdown-item px-3" href="javascript:void(0)" id="mcp-opt-amoled" onclick="if(window.mcpOsThemeManager){window.mcpOsThemeManager.applyTheme('amoled');}else if(window.switchMcpTheme){window.switchMcpTheme('amoled');}" style="display: flex; align-items: center; justify-content: space-between;">
+                    <span><i class="fas fa-moon mr-2 text-muted"></i>AMOLED Vanta</span>
+                    <i class="fas fa-check text-white" id="mcp-check-amoled" style="display: none;"></i>
+                </a>
 
                 <div class="dropdown-divider"></div>
                 <a class="dropdown-item px-3" href="{{ route('logout') }}"

@@ -117,3 +117,7 @@ Route::middleware(['auth', 'verified', RequireWorkspace::class])->group(
 );
 
 Sendportal::publicWebRoutes();
+
+Route::get('dashboard', static function () {
+    return redirect()->route('sendportal.dashboard');
+})->name('dashboard');

@@ -1,10 +1,10 @@
 <div class="main-wrapper col p-0 min-vh-100">
 
     <div class="modal modal-left fade sidebar" id="sidebar-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-scrollable mh-100" style="background-color: #000000 !important;" role="document">
-            <div class="modal-content border-0 rounded-0 mh-100" style="background-color: #000000 !important;">
+        <div class="modal-dialog modal-dialog-scrollable mh-100" role="document">
+            <div class="modal-content border-0 rounded-0 mh-100">
 
-                <div class="modal-body p-0" style="background-color: #000000 !important;">
+                <div class="modal-body p-0">
 
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -27,11 +27,7 @@
 
     <div class="main-content pl-4-half pr-4-half pb-4-half">
 
-        @if( ! in_array(request()->route()->getName(), [
-            'login',
-            'register',
-            'password.reset',
-        ]))
+        @if( ! request()->routeIs('login', 'register', 'password.reset') )
             @include('sendportal::layouts.partials.errors')
         @endif
 

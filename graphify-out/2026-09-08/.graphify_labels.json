@@ -3,7 +3,7 @@
   "1": "AppServiceProvider.php",
   "2": "🚀 SendPortal Super AMOLED Edition - Resend Multi-Key Engine",
   "3": "main.blade.php",
-  "4": "LoginController.php",
+  "4": "LoginController",
   "5": "LocaleMiddleware.php",
   "6": "campaigns/index.blade.php",
   "7": "messages/index.blade.php",
@@ -95,8 +95,12 @@
   "93": "griditem.blade.php",
   "94": "webview/show.blade.php",
   "95": "TotpService",
-  "96": "web.php",
+  "96": "mcp-os-webgl.js",
   "97": "2026_09_08_000000_add_two_factor_to_users_table.php",
   "98": "login.blade.php",
-  "99": "two_factor.blade.php"
+  "99": "two_factor.blade.php",
+  "100": "McpOsThemeManager",
+  "101": "mcp-os-galleries.js",
+  "102": "manifest.json",
+  "103": "McpOsEcoEngine"
 }
