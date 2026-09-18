@@ -66,6 +66,7 @@ services:
       - ./.env:/var/www/sendportal/.env
       - ./data/storage:/var/www/sendportal/storage/app
       - ./app/Adapters:/var/www/sendportal/app/Adapters
+      - ./app/Console:/var/www/sendportal/app/Console
       - ./app/Providers/AppServiceProvider.php:/var/www/sendportal/app/Providers/AppServiceProvider.php
       - ./app/Http/Middleware/LocaleMiddleware.php:/var/www/sendportal/app/Http/Middleware/LocaleMiddleware.php
       - ./config/app.php:/var/www/sendportal/config/app.php

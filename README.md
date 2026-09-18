@@ -118,6 +118,55 @@ A aplicação estará disponível em:
 
 ---
 
+### 🌐 Topologia do Cluster de Subdomínios Verificados (Hostinger + Resend)
+
+Para garantir que todos os envios saiam do modo Sandbox e atinjam 100% de entregabilidade (em conformidade estrita com DMARC, DKIM e SPF do Google e Yahoo), o SendPortal opera conectado aos subdomínios aprovados no domínio raiz :
+
+| Slot | Kit / Remetente | Subdomínio Ativo | Status DNS & Resend |
+| :---: | :--- | :--- | :---: |
+| **Slot #1** | **Carlinhos** |  | ✅ VERIFIED |
+| **Slot #2** | **Serjão** |  | ✅ VERIFIED |
+| **Slot #3** | **Drogadinho** |  | ✅ VERIFIED |
+| **Slot #4** | **Mateus C Pro** |  | ✅ VERIFIED |
+| **Slot #5** | **Alunos Estácio** |  | ✅ VERIFIED |
+| **Slots #6 a #10** | — | — | ⏸️ Desativados |
+
+- **Cota Total:** 500 envios/dia (15.000 envios/mês) no plano gratuito da Resend sem restrição de Sandbox.
+- **Auditoria Rápida do Pool via CLI:**
+  === Workspace #1 - Resend Multi-Key Pool (5 Chaves Verificadas) ===
++----------+------------+-----------------------------+-------------------+-------------+----------+
+| Slot     | Status     | Subdomínio Verificado       | Chave (Mascarada) | Envios Hoje | Cooldown |
++----------+------------+-----------------------------+-------------------+-------------+----------+
+| Slot #1  | ATIVO      | carlinhos.automationai.fun  | re_ZnNRq...hg27   | 0 / 100     | Não      |
+| Slot #2  | ATIVO      | serjao.automationai.fun     | re_WVBde...hiUD   | 0 / 100     | Não      |
+| Slot #3  | ATIVO      | drogadinho.automationai.fun | re_Qg7Tk...gWAe   | 0 / 100     | Não      |
+| Slot #4  | ATIVO      | mateus.automationai.fun     | re_6k4ud...NU75   | 0 / 100     | Não      |
+| Slot #5  | ATIVO      | alunos.automationai.fun     | re_NVmuy...zt1G   | 0 / 100     | Não      |
+| Slot #6  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #7  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #8  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #9  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #10 | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
++----------+------------+-----------------------------+-------------------+-------------+----------+
+
+=== Workspace #2 - Resend Multi-Key Pool (5 Chaves Verificadas) ===
++----------+------------+-----------------------------+-------------------+-------------+----------+
+| Slot     | Status     | Subdomínio Verificado       | Chave (Mascarada) | Envios Hoje | Cooldown |
++----------+------------+-----------------------------+-------------------+-------------+----------+
+| Slot #1  | ATIVO      | carlinhos.automationai.fun  | re_ZnNRq...hg27   | 0 / 100     | Não      |
+| Slot #2  | ATIVO      | serjao.automationai.fun     | re_WVBde...hiUD   | 0 / 100     | Não      |
+| Slot #3  | ATIVO      | drogadinho.automationai.fun | re_Qg7Tk...gWAe   | 0 / 100     | Não      |
+| Slot #4  | ATIVO      | mateus.automationai.fun     | re_6k4ud...NU75   | 0 / 100     | Não      |
+| Slot #5  | ATIVO      | alunos.automationai.fun     | re_NVmuy...zt1G   | 0 / 100     | Não      |
+| Slot #6  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #7  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #8  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #9  | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
+| Slot #10 | DESATIVADO | -                           | -                 | 0 / 100     | Não      |
++----------+------------+-----------------------------+-------------------+-------------+----------+
+
+---
+
 ## 🛡️ Segurança e Privacidade
 - O arquivo `.env` e a pasta `/data` (onde ficam os dados brutos de PostgreSQL e storage) estão incluídos no `.gitignore`.
 - Nunca faça commit de suas chaves de API ou segredos do sistema.
