@@ -1084,11 +1084,5 @@
     "seen": 1789752511.3707924,
     "ast_hash": "891b3ecbcf99151a633220ac5273fca5",
     "semantic_hash": ""
-  },
-  "app/Console/Kernel.php": {
-    "mtime": 1790738611.0780985,
-    "seen": 1790738650.0282733,
-    "ast_hash": "df2152f06cd07c8e95e36e6afab01c76",
-    "semantic_hash": ""
   }
 }

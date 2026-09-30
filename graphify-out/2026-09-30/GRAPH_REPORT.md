@@ -1,16 +1,16 @@
-# Graph Report - sendportal  (2026-09-30)
+# Graph Report - sendportal  (2026-09-18)
 
 ## Corpus Check
-- 115 files · ~605,739 words
+- 114 files · ~605,663 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 863 nodes · 1381 edges · 130 communities (31 shown, 42 thin omitted)
+- 857 nodes · 1375 edges · 126 communities (28 shown, 41 thin omitted)
 - Extraction: 98% EXTRACTED · 2% INFERRED · 0% AMBIGUOUS · INFERRED: 24 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bba6ad21`
+- Built from commit: `49df207c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -72,21 +72,17 @@
 - .intersectMeshes
 - sr
 - le
-- .update
+- W
 - ke
 - .addAttribute
-- W
-- .sub
-- rr
 - .copy
-- Kernel
+- ni
+- .getMaxScaleOnAxis
+- .sub
 - ct
-- .draw
 - zs
 - vt
 - oe
-- .constructor
-- .multiply
 - ue
 
 ## God Nodes (most connected - your core abstractions)
@@ -103,20 +99,20 @@
 
 ## Surprising Connections (you probably didn't know these)
 - `j()` --indirect_call--> `v()`  [INFERRED]
-  public/js/ogl.js → public/js/ogl.js  _Bridges community 112 → community 127_
+  public/js/ogl.js → public/js/ogl.js  _Bridges community 112 → community 105_
 - `he()` --calls--> `_`  [EXTRACTED]
-  public/js/ogl.js → public/js/ogl.js  _Bridges community 1 → community 120_
+  public/js/ogl.js → public/js/ogl.js  _Bridges community 1 → community 112_
 - `ke` --calls--> `_`  [EXTRACTED]
   public/js/ogl.js → public/js/ogl.js  _Bridges community 1 → community 115_
-- `sr()` --calls--> `_`  [EXTRACTED]
-  public/js/ogl.js → public/js/ogl.js  _Bridges community 1 → community 112_
 - `R()` --calls--> `_`  [EXTRACTED]
-  public/js/ogl.js → public/js/ogl.js  _Bridges community 1 → community 127_
+  public/js/ogl.js → public/js/ogl.js  _Bridges community 1 → community 105_
+- `zs` --calls--> `le()`  [EXTRACTED]
+  public/js/ogl.js → public/js/ogl.js  _Bridges community 113 → community 124_
 
 ## Import Cycles
 - None detected.
 
-## Communities (130 total, 42 thin omitted)
+## Communities (126 total, 41 thin omitted)
 
 ### Community 0 - "ResendMailAdapter"
 Cohesion: 0.15
@@ -147,8 +143,8 @@ Cohesion: 0.50
 Nodes (3): sendportal::layouts.partials.pagination, sendportal::messages.partials.status-row, sendportal::messages.partials.nav
 
 ### Community 95 - "q"
-Cohesion: 0.05
-Nodes (13): As(), br, en, p(), gr, K, kr, nr (+5 more)
+Cohesion: 0.08
+Nodes (9): As(), en, p(), gr, q, sn, Vr(), ze (+1 more)
 
 ### Community 96 - "mcp-os-webgl.js"
 Cohesion: 0.13
@@ -164,7 +160,7 @@ Nodes (11): ALL_IMAGES, FLOWERS_IMAGES, GALLERY_PRESETS, GYM_IMAGES, IMAGE_GALLE
 
 ### Community 101 - "U"
 Cohesion: 0.05
-Nodes (15): ai(), di(), gi(), hi(), ii(), li(), mi(), ni() (+7 more)
+Nodes (17): ai(), ci(), di(), _e(), gi(), hi(), ii(), li() (+9 more)
 
 ### Community 102 - "manifest.json"
 Cohesion: 0.33
@@ -172,26 +168,26 @@ Nodes (5): flowers, gym, motivation, red, soft
 
 ### Community 103 - "ar"
 Cohesion: 0.08
-Nodes (7): ar, dr(), kt(), mr, pr(), Ut(), yr
+Nodes (8): ar, dr(), kt(), mr, Ot, pr(), Ut(), yr
 
 ### Community 104 - "ks"
-Cohesion: 0.09
-Nodes (4): ci(), ge(), ks, me()
+Cohesion: 0.06
+Nodes (8): br, ge(), K, kr, ks, me(), nr, zr
 
 ### Community 105 - "tn"
-Cohesion: 0.15
-Nodes (6): fr(), A(), E(), m(), ns(), tn
+Cohesion: 0.11
+Nodes (9): fr(), A(), E(), m(), v(), ns(), tn, tr (+1 more)
 
 ### Community 106 - ".z"
 Cohesion: 0.08
 Nodes (4): Gs(), Hs(), qs(), Xs()
 
 ### Community 107 - "it"
-Cohesion: 0.16
+Cohesion: 0.17
 Nodes (3): Ds(), it, St
 
 ### Community 108 - "pt"
-Cohesion: 0.12
+Cohesion: 0.11
 Nodes (7): bi(), _i(), pt, Se(), Si(), Ti(), vi()
 
 ### Community 109 - "V"
@@ -199,32 +195,24 @@ Cohesion: 0.09
 Nodes (3): De(), qi(), V
 
 ### Community 110 - "zt"
-Cohesion: 0.11
-Nodes (11): be(), gt, Ie(), Ne(), nn(), or, l(), zr (+3 more)
+Cohesion: 0.21
+Nodes (4): Ie(), Ne(), or, zt
+
+### Community 111 - ".intersectMeshes"
+Cohesion: 0.19
+Nodes (3): cr, Ee(), ki()
 
 ### Community 112 - "sr"
-Cohesion: 0.21
-Nodes (8): sr(), C(), et(), j(), L(), N(), tt(), xs()
+Cohesion: 0.19
+Nodes (9): he(), sr(), C(), et(), j(), L(), N(), tt() (+1 more)
 
-### Community 114 - ".update"
-Cohesion: 0.20
-Nodes (3): cs, is, Ys()
+### Community 114 - "W"
+Cohesion: 0.06
+Nodes (17): be(), cs, Fs(), gt, is, nn(), on, pn (+9 more)
 
 ### Community 115 - "ke"
-Cohesion: 0.15
-Nodes (4): ji(), ke, we(), xe()
-
-### Community 117 - "W"
-Cohesion: 0.18
-Nodes (4): on, rn, un, W
-
-### Community 120 - ".copy"
 Cohesion: 0.14
-Nodes (6): he(), Lt, Ot, ri(), ur(), ye()
-
-### Community 121 - "Kernel"
-Cohesion: 0.40
-Nodes (3): Kernel, Illuminate\Console\Scheduling\Schedule, Illuminate\Foundation\Console\Kernel
+Nodes (5): er, ji(), ke, we(), xe()
 
 ### Community 122 - "ct"
 Cohesion: 0.29
@@ -238,29 +226,25 @@ Nodes (3): bt(), Tt(), zs
 Cohesion: 0.33
 Nodes (3): Es(), Ms(), vt()
 
-### Community 127 - ".constructor"
-Cohesion: 0.40
-Nodes (3): v(), tr, R()
-
 ## Knowledge Gaps
 - **104 isolated node(s):** `entrypoint.sh script`, `soft`, `motivation`, `gym`, `flowers` (+99 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 323 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
-- **42 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 321 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **41 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `_` connect `_` to `.multiply`, `ue`, `q`, `mcp-os-webgl.js`, `U`, `ar`, `ks`, `tn`, `.z`, `it`, `pt`, `V`, `zt`, `.intersectMeshes`, `sr`, `le`, `.update`, `ke`, `.addAttribute`, `W`, `.sub`, `rr`, `.copy`, `ct`, `.draw`, `zs`, `vt`, `oe`, `.constructor`?**
-  _High betweenness centrality (0.378) - this node is a cross-community bridge._
-- **Why does `V` connect `V` to `mcp-os-webgl.js`, `_`, `ar`, `zt`, `.intersectMeshes`, `sr`, `.update`, `ke`, `.sub`, `.copy`?**
+- **Why does `_` connect `_` to `ue`, `q`, `mcp-os-webgl.js`, `U`, `ar`, `ks`, `tn`, `.z`, `it`, `pt`, `V`, `zt`, `.intersectMeshes`, `sr`, `le`, `W`, `ke`, `.addAttribute`, `.copy`, `ni`, `.getMaxScaleOnAxis`, `.sub`, `ct`, `zs`, `vt`, `oe`?**
+  _High betweenness centrality (0.383) - this node is a cross-community bridge._
+- **Why does `V` connect `V` to `mcp-os-webgl.js`, `_`, `ar`, `zt`, `.intersectMeshes`, `sr`, `W`, `ke`, `.copy`, `.sub`?**
   _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **Why does `ks` connect `ks` to `mcp-os-webgl.js`, `_`, `q`?**
-  _High betweenness centrality (0.033) - this node is a cross-community bridge._
+  _High betweenness centrality (0.034) - this node is a cross-community bridge._
 - **What connects `entrypoint.sh script`, `soft`, `motivation` to the rest of the system?**
   _104 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `ResendMailAdapter` be split into smaller, more focused modules?**
   _Cohesion score 0.14624505928853754 - nodes in this community are weakly interconnected._
 - **Should `_` be split into smaller, more focused modules?**
-  _Cohesion score 0.041742286751361164 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.04011299435028248 - nodes in this community are weakly interconnected._
 - **Should `🚀 SendPortal Super AMOLED Edition - Resend Multi-Key Engine` be split into smaller, more focused modules?**
   _Cohesion score 0.1111111111111111 - nodes in this community are weakly interconnected._
